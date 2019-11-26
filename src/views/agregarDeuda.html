@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./src/css/agregarDeuda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container h-100 mt-4">
+        <div class="jumbotron row">
+            <div class=" col-12 m-2">
+                <button type="button" class="btn btn-primary float-right" data-toggle="modal"
+                 data-target="#agregarDeuda">
+                    Agregar deuda
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="agregarDeuda" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">Agrega una deuda</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3 card p-3">
+                                        <label for="">Titulo</label>
+                                        <div class="input-group-append mb-4">
+                                            <span class="input-group-text justify-content-center"><i
+                                                    class="fa fa-pencil"></i></span>
+                                            <input type="text"  class="form-control"
+                                                id="" value="" placeholder="Ingresa titulo" data-toggle="tooltip"
+                                                data-placement="top" title="ingrese un titulo" required>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <label for="" class="mr-2">Descripcion: </label>
+                                            <input type="text" class="form-control" 
+                                            id="" value="" placeholder="Agrega una descripcion" data-toggle="tooltip"
+                                                data-placement="top" title="ingresa una Descripcion" required>
+                                        </div>
+                                    </div>
+                                    <div class="card container mb-3">
+                                        <div class="d-flex justify-content-between">
+                                        <div class="p-2">
+                                            <label for="">Deuda</label>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                class="fa fa-usd"></i></span>
+                                                <input type="number" placeholder="$$$" class="form-control a" 
+                                                id="" value="" required>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <label for="">Interes mensual</label>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text "><i
+                                                        class="fa fa-percent"></i></span>
+                                                <input type="text" placeholder="Interes" class="form-control a" id="" value="" required>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 card p-3">
+                                        <label for="">Buscar Usuario</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text justify-content-center"><i
+                                                    class="fa fa-percent"></i></span>
+                                            <input type="text"  id="" placeholder="Ingresa usuario"
+                                                class="form-control" value="" required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Agregar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <h1 class="display-4">Mis deudas</h1>
+                <hr class="my-4">
+            </div>
+            <div class="col-12">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-1">Deuda 1</h4>
+                            <small >25/11/2015</small>
+                        </div>
+                        <div class="">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                Cantidad: $500.00
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                Descripcion:
+                            </div>
+                            <div class="card p-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem exercitationem doloribus quidem voluptate nisi, cum dolorem deleniti fugiat nostrum s
+                                equi aliquam dicta. Corporis dolores omnis illum laboriosam minus voluptatem!
+                            </div>
+                        </div>
+                        <small class="text-muted">Tulio Triviño</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-1">Deuda 2</h4>
+                            <small>27/11/2019</small>
+                        </div>
+                        <div class="">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                Cantidad: $700.50
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                Descripcion:
+                            </div>
+                            <div class="card p-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem exercitationem
+                                doloribus quidem voluptate nisi, cum dolorem deleniti fugiat nostrum s
+                                equi aliquam dicta. Corporis dolores omnis illum laboriosam minus voluptatem!
+                            </div>
+                        </div>
+                        <small class="text-muted">Juan Carlos Bodoque</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="mb-1">Deuda 3</h4>
+                            <small>12/12/2019</small>
+                        </div>
+                        <div class="">
+                            <div class="d-flex w-100 justify-content-between mb-2">
+                                Cantidad: $1,350.00
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                Descripcion:
+                            </div>
+                            <div class="card p-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem exercitationem
+                                doloribus quidem voluptate nisi, cum dolorem deleniti fugiat nostrum s
+                                equi aliquam dicta. Corporis dolores omnis illum laboriosam minus voluptatem!
+                            </div>
+                        </div>
+                        <small class="text-muted">Juanin juan</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+</html>

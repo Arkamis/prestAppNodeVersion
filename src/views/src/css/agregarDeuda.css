@@ -1,0 +1,26 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #025a32 ;
+}
+
+.input-group-text {
+    width: 35px;
+    background: #038999 ;
+    color: white ;
+    border: 1 ;
+    border-radius: 0.25rem 0 0 0.25rem ;
+}
+.a {
+    width: 150px;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:hover, 
+.btn-primary:focus {
+    background: #038999;
+    border-color: #038999;
+}
